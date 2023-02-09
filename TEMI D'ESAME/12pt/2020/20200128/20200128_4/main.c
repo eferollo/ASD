@@ -30,7 +30,8 @@ link buildTree(int *inorder, int *preorder, int N){
         while(inorder[j]==preorder[i])
             j++;
         x= insertTree(x,inorder[j]);
-        
+        if(x==NULL)
+            return NULL;
     }
 }
 
