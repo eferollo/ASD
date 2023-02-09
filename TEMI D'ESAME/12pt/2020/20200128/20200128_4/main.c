@@ -17,22 +17,24 @@ link NEW(int chiave, link left, link right) {
     return x;
 }
 
-link insertTree(link h, int chiave){
-    if(h==NULL)
-        return NEW(chiave,NULL,NULL);
+link build(int *inorder, int *preorder, int li, int ri, int *index){
+    if(li>ri)
+        return NULL;
+    int i;
+    link x= NEW(preorder[(*index)++],NULL,NULL);
 
-}
-
-link buildTree(int *inorder, int *preorder, int N){
-    int i,j=0;
-    link x;
-    for(i=0; i<N; i++){
-        while(inorder[j]==preorder[i])
-            j++;
-        x= insertTree(x,inorder[j]);
-        if(x==NULL)
-            return NULL;
+    for(i=li; i<=ri; i++){
+        if(inorder[i]==x->item)
+            break;
     }
+
+    x->left= build(inorder,preorder,li,i-1,index);
+    x->right= build(inorder,preorder,i+1,ri, index);
+    return x;
+}
+link buildTree(int *inorder, int *preorder, int N){
+    int index=0;
+    return build(inorder,preorder,0,N-1, &index);
 }
 
 int main() {
