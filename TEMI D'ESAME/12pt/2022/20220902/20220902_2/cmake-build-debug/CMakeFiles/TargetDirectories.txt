@@ -1,0 +1,3 @@
+/home/efe/3 ANNO/ASD/TEMI D'ESAME/12pt/20220902_2/cmake-build-debug/CMakeFiles/20220902_2.dir
+/home/efe/3 ANNO/ASD/TEMI D'ESAME/12pt/20220902_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/efe/3 ANNO/ASD/TEMI D'ESAME/12pt/20220902_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

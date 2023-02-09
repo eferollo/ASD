@@ -1,0 +1,3 @@
+/home/efe/3 ANNO/ASD/LAB02/ES2/cmake-build-debug/CMakeFiles/ES2.dir
+/home/efe/3 ANNO/ASD/LAB02/ES2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/efe/3 ANNO/ASD/LAB02/ES2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
