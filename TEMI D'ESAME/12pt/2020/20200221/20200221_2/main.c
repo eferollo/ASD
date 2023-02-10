@@ -26,8 +26,8 @@ int main() {
     fin=fopen("input.txt","r");
     if(fin==NULL) exit(-1);
     int i,j,n=4,m=5;
-    char **A=malloc(n*sizeof(int *));
-    for(i=0; i<n; i++) A[i]=malloc(m*sizeof (int));
+    char **A=malloc(n*sizeof(char *));
+    for(i=0; i<n; i++) A[i]=malloc(m*sizeof (char));
     for(i=0; i<n; i++)
         for(j=0; j<m; j++)
             fscanf(fin,"%c ", &A[i][j]);
