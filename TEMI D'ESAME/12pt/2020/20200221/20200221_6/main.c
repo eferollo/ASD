@@ -47,10 +47,12 @@ int disgiunte(char **stringhe, int n){
     int *set=malloc(n*sizeof(int));
     int *sol=malloc(sizeof(int));
     for(i=0; i<n; i++) set[i]=i;
+
     for(i=n; i>1 && stop==0; i--){
         sol=realloc(sol,i*sizeof (int));
         powerset(0,stringhe,set,sol,i,n,0,&stop);
     }
+
     free(set);
     free(sol);
     return i+1;
