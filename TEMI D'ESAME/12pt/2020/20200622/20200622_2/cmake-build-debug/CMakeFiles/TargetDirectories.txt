@@ -1,0 +1,3 @@
+/home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2020/20200622/20200622_2/cmake-build-debug/CMakeFiles/20200622_2.dir
+/home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2020/20200622/20200622_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2020/20200622/20200622_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
