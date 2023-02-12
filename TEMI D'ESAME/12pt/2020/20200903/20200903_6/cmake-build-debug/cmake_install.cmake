@@ -1,4 +1,4 @@
-# Install script for directory: /home/efe/GitProject/ASD/LAB08/ES2
+# Install script for directory: /home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2020/20200903/20200903_6
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/efe/GitProject/ASD/LAB08/ES2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2020/20200903/20200903_6/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

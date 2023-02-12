@@ -8,10 +8,10 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "/snap/clion/219/bin/cmake/linux/bin/cmake",
-			"cpack" : "/snap/clion/219/bin/cmake/linux/bin/cpack",
-			"ctest" : "/snap/clion/219/bin/cmake/linux/bin/ctest",
-			"root" : "/snap/clion/219/bin/cmake/linux/share/cmake-3.24"
+			"cmake" : "/snap/clion/222/bin/cmake/linux/x64/bin/cmake",
+			"cpack" : "/snap/clion/222/bin/cmake/linux/x64/bin/cpack",
+			"ctest" : "/snap/clion/222/bin/cmake/linux/x64/bin/ctest",
+			"root" : "/snap/clion/222/bin/cmake/linux/x64/share/cmake-3.24"
 		},
 		"version" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-ec450048f39bf2eb95d1.json",
+			"jsonFile" : "codemodel-v2-11b208db02f681d5abc8.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-da8e222ec94ab0505f31.json",
+			"jsonFile" : "cache-v2-671ebf79ea95e39fb72f.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-d94b9de11de9b9d4dbc6.json",
+			"jsonFile" : "cmakeFiles-v1-ae295775af34ed246cd0.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-1a22d9ad962073fe4f39.json",
+			"jsonFile" : "toolchains-v1-6bbe3d3521e8d6cffb4c.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-da8e222ec94ab0505f31.json",
+			"jsonFile" : "cache-v2-671ebf79ea95e39fb72f.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-d94b9de11de9b9d4dbc6.json",
+			"jsonFile" : "cmakeFiles-v1-ae295775af34ed246cd0.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,7 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-ec450048f39bf2eb95d1.json",
+			"jsonFile" : "codemodel-v2-11b208db02f681d5abc8.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -96,7 +96,7 @@
 		},
 		"toolchains-v1" : 
 		{
-			"jsonFile" : "toolchains-v1-1a22d9ad962073fe4f39.json",
+			"jsonFile" : "toolchains-v1-6bbe3d3521e8d6cffb4c.json",
 			"kind" : "toolchains",
 			"version" : 
 			{

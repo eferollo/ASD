@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: ES2
+# Project: 20200903_6
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__ES2_Debug
+rule C_COMPILER__20200903_6_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__ES2_Debug
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__ES2_Debug
+rule C_EXECUTABLE_LINKER__20200903_6_Debug
   command = $PRE_LINK && /usr/bin/cc $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /snap/clion/222/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/efe/GitProject/ASD/LAB08/ES2 -B/home/efe/GitProject/ASD/LAB08/ES2/cmake-build-debug
+  command = /snap/clion/222/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S"/home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2020/20200903/20200903_6" -B"/home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2020/20200903/20200903_6/cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 
