@@ -1,4 +1,10 @@
-/snap/clion/222/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/222/bin/ninja/linux/x64/ninja -G Ninja -S "/home/efe/3 ANNO/ASD/TEMI D'ESAME/12pt/20220627_4" -B "/home/efe/3 ANNO/ASD/TEMI D'ESAME/12pt/20220627_4/cmake-build-debug"
+/snap/clion/222/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/222/bin/ninja/linux/x64/ninja -G Ninja -S "/home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2022/20220627/20220627_4" -B "/home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2022/20220627/20220627_4/cmake-build-debug"
+-- The C compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/efe/3 ANNO/ASD/TEMI D'ESAME/12pt/20220627_4/cmake-build-debug
+-- Build files have been written to: /home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2022/20220627/20220627_4/cmake-build-debug

@@ -3,10 +3,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define N 2
+#define N 3
+
 typedef struct binarytree *nTREE;
 
 nTREE init();
-void insertTREE(nTREE t, char *key);
 int countIf(nTREE t);
+
 #endif

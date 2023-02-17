@@ -1,4 +1,4 @@
-# Install script for directory: /home/efe/3 ANNO/ASD/TEMI D'ESAME/12pt/20220627_4
+# Install script for directory: /home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2022/20220627/20220627_4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/efe/3 ANNO/ASD/TEMI D'ESAME/12pt/20220627_4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/efe/GitProject/ASD/TEMI D'ESAME/12pt/2022/20220627/20220627_4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
