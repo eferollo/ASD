@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <limits.h>
+
+#define N 3
 
 typedef struct binarytree *nTREE;
 
