@@ -1,0 +1,3 @@
+/home/efe/GitProject/ASD/ORALE/camminosemplice/cmake-build-debug/CMakeFiles/camminosemplice.dir
+/home/efe/GitProject/ASD/ORALE/camminosemplice/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/efe/GitProject/ASD/ORALE/camminosemplice/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,10 @@
+# ninja log v5
+37	69	1677196430099943848	camminosemplice	7af0c7e0518e52e4
+0	26	1677196430055943561	CMakeFiles/camminosemplice.dir/main.c.o	4d0f2841491d3125
+0	37	1677196430063943613	CMakeFiles/camminosemplice.dir/Graph.c.o	230639c2d76c973c
+56	77	1677196386491659775	camminochiuso	f28cdcefc00a1639
+0	25	1677196430051943534	CMakeFiles/camminosemplice.dir/PQ.c.o	9c61a8e1155ab99
+0	20	1677196492104347668	CMakeFiles/camminosemplice.dir/main.c.o	47b9e971aa54d11d
+0	34	1677196492116347745	CMakeFiles/camminosemplice.dir/Graph.c.o	24582844b79c1ff2
+1	35	1677196492120347772	CMakeFiles/camminosemplice.dir/PQ.c.o	b2e9000d4b900e18
+35	52	1677196492136347875	camminosemplice	7af0c7e0518e52e4
