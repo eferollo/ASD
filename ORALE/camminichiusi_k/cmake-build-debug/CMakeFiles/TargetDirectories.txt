@@ -1,0 +1,3 @@
+/home/efe/GitProject/ASD/ORALE/camminichiusi_k/cmake-build-debug/CMakeFiles/camminichiusi_k.dir
+/home/efe/GitProject/ASD/ORALE/camminichiusi_k/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/efe/GitProject/ASD/ORALE/camminichiusi_k/cmake-build-debug/CMakeFiles/rebuild_cache.dir
