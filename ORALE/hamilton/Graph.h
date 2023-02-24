@@ -1,8 +1,12 @@
-//
-// Created by efe on 24/02/23.
-//
+#ifndef GRAPH_H
+#define GRAPH_H
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct graph *Graph;
+typedef struct{
+    int v,w,wt;
+}Edge;
 
-#ifndef HAMILTON_GRAPH_H
-#define HAMILTON_GRAPH_H
-
+Graph GRAPHload();
+void hamiltonPath(Graph G);
 #endif
