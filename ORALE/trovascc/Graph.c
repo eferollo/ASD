@@ -83,15 +83,7 @@ Graph GRAPHload(FILE *fp){
     G->ladj=calloc(G->V, sizeof(link));
     while(fscanf(fp,"%d %d %d", &v, &w,&wt)!=EOF)
         GRAPHinsertE(G,v,w,wt);
-
-
     fclose(fp);
-
-    /*for(int i=0; i<V; i++){
-        for(int j=0; j<V; j++)
-            printf("%d ", G->madj[i][j]);
-        printf("\n");
-    }*/
     return G;
 }
 
@@ -106,40 +98,68 @@ void madjToladj(Graph G){
 
 }
 
-void dfsR(Graph G, Edge e, int *time, int *st, int *pre, int *path, int k, int dist, int end){
+void dfsR2(Graph G, Edge e, int *pre){
     link t;
-    int v,w=e.w;
-    st[w]=e.v;
-    pre[w]=(*time)++;
-    dist++;
-    path[w]=1;
-
+    int w=e.w;
+    pre[w]=1;
+    printf("%d ",w);
     for(t=G->ladj[w]; t!=NULL; t=t->next){
         if(pre[t->v]==-1)
-            dfsR(G, EDGEcreate(w,t->v, 1), time,st,pre,path,k,dist, end);
+            dfsR2(G, EDGEcreate(w,t->v,1),pre);
     }
-    if(end==e.w && dist==k){
-        for(v=0; v<G->V; v++)
-            if(path[v]!=0)
-                printf("%d ", v);
-        printf("\n");
-    }
-    path[w]=0;
-    pre[w]=-1;
 }
 
-void GRAPHdfs(Graph G){
-    int v,time=0, *path,*pre, *st;
+void dfsR(Graph G, Edge e, int *pre, PQ pq){
+    link t;
+    int v, w=e.w;
+    pre[w]=1;
+    for(t=G->ladj[w]; t!=NULL; t=t->next){
+        if(pre[t->v]==-1)
+            dfsR(G, EDGEcreate(w,t->v,1), pre,pq);
+    }
+    PQpush(pq,w);
+}
+
+Graph GRAPHtranspose(Graph G){
+    //soluzione rapida trasporre matrice e convertire matrice in lista
+    Graph gr= GRAPHinit(G->V);
+    int v,w;
+    for(v=0; v<G->V; v++)
+        for(w=0; w<G->V; w++)
+            if(G->madj[w][v]!=0){
+                gr->madj[v][w]=G->madj[w][v];
+                gr->E++;
+            }
+
+    madjToladj(gr);
+    return gr;
+}
+
+void findSCC(Graph G){
+    int v, *pre;
 
     pre=malloc(G->V*sizeof(int));
-    st=malloc(G->V*sizeof(int));
-    path=malloc(G->V*sizeof(int));
-    for(v=0; v<G->V; v++){
+    PQ pq=PQInit();
+
+    for(v=0; v<G->V; v++)
         pre[v]=-1;
-        st[v]=-1;
-        path[v]=0;
+
+    Graph gr= GRAPHtranspose(G);
+    for(v=0; v<G->V; v++)
+        if(pre[v]==-1)
+            dfsR(gr, EDGEcreate(v,v,1),pre,pq);
+
+    //PQprint(pq);
+
+    for(v=0; v<G->V; v++)
+        pre[v]=-1;
+
+    while(!PQempty(pq)){
+        v= PQpop(pq);
+        if(pre[v]==-1){
+            dfsR2(G, EDGEcreate(v,v,1),pre);
+            printf("\n");
+        }
     }
 
-    int start=0, end=5;
-    dfsR(G, EDGEcreate(start,start,1), &time, st,pre,path,4, -1, end);
 }
