@@ -141,5 +141,5 @@ void GRAPHdfs(Graph G){
     }
 
     int start=0, end=5;
-    dfsR(G, EDGEcreate(start,start,1), &time, st,pre,path,4, -1, 5);
+    dfsR(G, EDGEcreate(start,start,1), &time, st,pre,path,4, -1, end);
 }

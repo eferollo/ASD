@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/efe/3 ANNO/ASD/LAB04/ES2/cmake-build-debug"
+			"value" : "/home/efe/GitProject/ASD/ORALE/trovascc/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/218/bin/cmake/linux/bin/cmake"
+			"value" : "/snap/clion/222/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/218/bin/cmake/linux/bin/cpack"
+			"value" : "/snap/clion/222/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/218/bin/cmake/linux/bin/ctest"
+			"value" : "/snap/clion/222/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER",
@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-9"
+			"value" : "/usr/bin/gcc-ar-11"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-9"
+			"value" : "/usr/bin/gcc-ranlib-11"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -415,7 +415,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/efe/3 ANNO/ASD/LAB04/ES2/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/efe/GitProject/ASD/ORALE/trovascc/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -475,7 +475,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/efe/3 ANNO/ASD/LAB04/ES2"
+			"value" : "/home/efe/GitProject/ASD/ORALE/trovascc"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/snap/clion/218/bin/ninja/linux/ninja"
+			"value" : "/snap/clion/222/bin/ninja/linux/x64/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -715,7 +715,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "ES2"
+			"value" : "trovascc"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -759,7 +759,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/218/bin/cmake/linux/share/cmake-3.24"
+			"value" : "/snap/clion/222/bin/cmake/linux/x64/share/cmake-3.24"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -998,7 +998,19 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "ES2_BINARY_DIR",
+			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
+			"name" : "trovascc_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1007,10 +1019,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/efe/3 ANNO/ASD/LAB04/ES2/cmake-build-debug"
+			"value" : "/home/efe/GitProject/ASD/ORALE/trovascc/cmake-build-debug"
 		},
 		{
-			"name" : "ES2_IS_TOP_LEVEL",
+			"name" : "trovascc_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1022,7 +1034,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "ES2_SOURCE_DIR",
+			"name" : "trovascc_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1031,19 +1043,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/efe/3 ANNO/ASD/LAB04/ES2"
-		},
-		{
-			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "linker supports push/pop state"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "TRUE"
+			"value" : "/home/efe/GitProject/ASD/ORALE/trovascc"
 		}
 	],
 	"kind" : "cache",

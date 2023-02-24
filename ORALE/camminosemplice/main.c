@@ -3,7 +3,7 @@
 #include "Graph.h"
 
 int main() {
-    FILE *fp=fopen("Grafo.txt","r");
+    FILE *fp=fopen("grafo.txt","r");
     if(fp==NULL) exit(-1);
 
     Graph G=GRAPHload(fp);

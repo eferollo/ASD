@@ -1,0 +1,3 @@
+/home/efe/GitProject/ASD/ORALE/trovascc/cmake-build-debug/CMakeFiles/trovascc.dir
+/home/efe/GitProject/ASD/ORALE/trovascc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/efe/GitProject/ASD/ORALE/trovascc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
