@@ -16,4 +16,6 @@ int countLR(BST bst);
 int findMax(BST bst);
 int isSubTree(BST b1, BST b2);
 void BSTinsert_root(BST bst, int key);
+int isSumTree(BST bst);
+BST getBSTforSumtest();
 #endif

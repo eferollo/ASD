@@ -183,3 +183,40 @@ link insertT(link h, int key){
 void BSTinsert_root(BST bst, int key){
     bst->root= insertT(bst->root,key);
 }
+
+int sum(link h){
+    if(h==NULL)
+        return 0;
+    return sum(h->l) + h->key + sum(h->r);
+}
+int isSumTreeR(link h){
+    int ls,rs;
+    if(h==NULL || h->l==NULL && h->r == NULL)
+        return 1;
+
+    ls=sum(h->l);
+    rs=sum(h->r);
+
+    if((h->key == ls+rs) && isSumTreeR(h->l) && isSumTreeR(h->r))
+        return 1;
+    return 0;
+}
+int isSumTree(BST bst){
+    return isSumTreeR(bst->root);
+}
+BST getBSTforSumtest(){
+    BST bst=malloc(sizeof(*bst));
+    /*       26
+            /   \
+           10     3
+         /    \     \
+        4      6      3
+     */
+    link x4=NEW(4,NULL,NULL);
+    link x5=NEW(6,NULL,NULL);
+    link x2=NEW(10,x4,x5);
+    link x7=NEW(3,NULL,NULL);
+    link x3=NEW(3,NULL,x7);
+    bst->root=NEW(26,x2,x3);
+    return bst;
+}
