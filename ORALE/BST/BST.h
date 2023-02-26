@@ -18,4 +18,7 @@ int isSubTree(BST b1, BST b2);
 void BSTinsert_root(BST bst, int key);
 int isSumTree(BST bst);
 BST getBSTforSumtest();
+int countCompleteNodes(BST bst);
+int greatherNodes(BST bst, int l1, int l2, int c);
+int nLeaf(BST bst, int lvl);
 #endif

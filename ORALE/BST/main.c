@@ -24,5 +24,8 @@ int main() {
     //BSTinsert_root(bst,50);
     //x=isSumTree(sumBst);
     //freeBST(bst);
+    //x=countCompleteNodes(bst);
+    //x= greatherNodes(bst2, 1, 3, 2);
+    //x=nLeaf(bst,4);
     return 0;
 }

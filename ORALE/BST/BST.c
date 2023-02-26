@@ -220,3 +220,52 @@ BST getBSTforSumtest(){
     bst->root=NEW(26,x2,x3);
     return bst;
 }
+
+void countNR(link h, int *cnt){
+    if(h==NULL)
+        return;
+    if(h->l != NULL && h->r !=NULL)
+        (*cnt)++;
+    countNR(h->l,cnt);
+    countNR(h->r,cnt);
+}
+int countCompleteNodes(BST bst){
+    int cnt=0;
+    countNR(bst->root,&cnt);
+    return cnt;
+}
+
+void greather_R(link h, int l1, int l2, int c, int k, int *cnt){
+    if(h==NULL)
+        return;
+
+    if((k>=l1 && k<=l2) && h->key>c)
+        (*cnt)++;
+
+    greather_R(h->l,l1,l2,c,k+1,cnt);
+    greather_R(h->r,l1,l2,c,k+1,cnt);
+}
+int greatherNodes(BST bst, int l1, int l2, int c){
+    int cnt=0;
+    greather_R(bst->root, l1,l2,c,0,&cnt);
+    return cnt;
+
+}
+
+void nLeafR(link h, int lvl, int k, int *cnt){
+    if(h==NULL)
+        return;
+
+    if(k==lvl && h->l==NULL && h->r==NULL){
+        (*cnt)++;
+        return;
+    }
+
+    nLeafR(h->l, lvl, k+1, cnt);
+    nLeafR(h->r, lvl, k+1, cnt);
+}
+int nLeaf(BST bst, int lvl){
+    int cnt=0;
+    nLeafR(bst->root, lvl, 1,&cnt);
+    return cnt;
+}
