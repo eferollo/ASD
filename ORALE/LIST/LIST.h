@@ -13,5 +13,6 @@ void removeMinMax(LIST l, int min, int max);
 void removeEven(LIST l);
 void addMissing(LIST l);
 LIST *listadiliste();
-
+void LISTinsertCoda(LIST l, int val);
+void intersection(LIST l1, LIST l2);
 #endif

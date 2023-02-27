@@ -37,6 +37,19 @@ void LISTinsert(LIST l, int val){
     l->head= insertR(l->head, val);
 }
 
+link insertCodaR(link h, int val){
+    if(h==NULL)
+        return newNode(val,NULL);
+    link x,p;
+    for(x=h->next, p=h; x!=NULL; p=x, x=x->next);
+    p->next= newNode(val,NULL);
+    return h;
+}
+
+void LISTinsertCoda(LIST l, int val){
+    l->head=insertCodaR(l->head, val);
+}
+
 link ListDelDup(link h){
     link x,p;
     x=h;
@@ -147,3 +160,32 @@ LIST *listadiliste(){
     return list;
 }
 
+link instersect(link h1, link h2){
+    link x,p,x1;
+    int flag, found=0;
+    for(x=h1, p=NULL; x!=NULL; p=x, x= (flag) ? h1 : x->next){
+        for(x1=h2; x1!=NULL; x1=x1->next){
+            if(x1->val == x->val)
+                found=1;
+        }
+        if(!found){
+            if(x==h1){
+                h1=x->next;
+                free(x);
+                x=NULL;
+                flag=1;
+            }else{
+                p->next=x->next;
+                free(x);
+                x=p;
+                flag=0;
+            }
+        }else
+            flag=0;
+        found=0;
+    }
+    return h1;
+}
+void intersection(LIST l1, LIST l2){
+    l1->head= instersect(l1->head,l2->head);
+}
