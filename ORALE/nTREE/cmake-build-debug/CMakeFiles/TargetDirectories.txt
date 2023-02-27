@@ -1,0 +1,3 @@
+/home/efe/GitProject/ASD/ORALE/nTREE/cmake-build-debug/CMakeFiles/nTREE.dir
+/home/efe/GitProject/ASD/ORALE/nTREE/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/efe/GitProject/ASD/ORALE/nTREE/cmake-build-debug/CMakeFiles/rebuild_cache.dir
