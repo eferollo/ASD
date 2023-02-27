@@ -299,7 +299,6 @@ void mirrorR(link h){
     h->l=h->r;
     h->r=t;
 }
-
 void mirror(BST bst){
     mirrorR(bst->root);
 }
