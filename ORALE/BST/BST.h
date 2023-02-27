@@ -21,4 +21,6 @@ BST getBSTforSumtest();
 int countCompleteNodes(BST bst);
 int greatherNodes(BST bst, int l1, int l2, int c);
 int nLeaf(BST bst, int lvl);
+int isIsomorphic(BST bst, BST bst2);
+void mirror(BST bst);
 #endif

@@ -27,5 +27,6 @@ int main() {
     //x=countCompleteNodes(bst);
     //x= greatherNodes(bst2, 1, 3, 2);
     //x=nLeaf(bst,4);
+    //mirror(bst);
     return 0;
 }

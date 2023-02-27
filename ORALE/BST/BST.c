@@ -269,3 +269,37 @@ int nLeaf(BST bst, int lvl){
     nLeafR(bst->root, lvl, 1,&cnt);
     return cnt;
 }
+
+int f(link h1, link h2){
+    if(h1 == NULL && h2 == NULL)
+        return 0;
+
+    if(h1 == NULL && h2 == NULL)
+        return 0;
+
+    if(h1->key != h2->key)
+        return 0;
+
+    return (f(h1->l,h2->l) && f(h1->r,h2->r) ||
+            f(h1->l,h2->r) && f(h1->r, h2->l));
+}
+int isIsomorphic(BST bst, BST bst2){
+    return f(bst->root, bst2->root);
+}
+
+void mirrorR(link h){
+    if(h==NULL)
+        return;
+
+    link t;
+    mirrorR(h->l);
+    mirrorR(h->r);
+
+    t=h->l;
+    h->l=h->r;
+    h->r=t;
+}
+
+void mirror(BST bst){
+    mirrorR(bst->root);
+}

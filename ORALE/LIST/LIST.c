@@ -139,3 +139,11 @@ void freeList(link h){
     freeList(h->next);
     free(h);
 }
+
+LIST *listadiliste(){
+    LIST *list=malloc(10*sizeof(list));
+    for(int i=0; i<10; i++)
+        list[i]=LISTinit();
+    return list;
+}
+
