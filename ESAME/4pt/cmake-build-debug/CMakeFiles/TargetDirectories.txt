@@ -1,0 +1,3 @@
+/home/efe/3 ANNO/ASD/esame/4pt/cmake-build-debug/CMakeFiles/4pt.dir
+/home/efe/3 ANNO/ASD/esame/4pt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/efe/3 ANNO/ASD/esame/4pt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
