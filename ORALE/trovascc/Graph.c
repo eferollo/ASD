@@ -134,7 +134,13 @@ Graph GRAPHtranspose(Graph G){
     madjToladj(gr);
 
 
-    ////
+
+
+
+
+    if_(
+            yuyty
+            )
     return gr;
 }
 
