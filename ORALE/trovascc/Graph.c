@@ -132,6 +132,9 @@ Graph GRAPHtranspose(Graph G){
             }
 
     madjToladj(gr);
+
+
+    ////
     return gr;
 }
 
